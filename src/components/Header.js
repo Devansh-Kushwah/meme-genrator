@@ -1,15 +1,15 @@
+import React from "react"
+import imga from "../images/meme-face.png"
 
-export default function NavBar(){
-    return(
-        <nav>
-            <div className="nav-icon">
-
-            <div className="meme-face">
-                <img src={require("../images/meme-face.png")} alt="meme-face" />
-            </div>
-            <h3>Meme App</h3>
-            </div>
-            <p className="side-heading">React Course Project-3</p>
-        </nav>
+export default function Header() {
+    return (
+        <header className="header">
+            <img 
+                src={imga}
+                className="header--image"
+            />
+            <h2 className="header--title">Meme Generator</h2>
+            <h4 className="header--project">React Course - Project 3</h4>
+        </header>
     )
 }
